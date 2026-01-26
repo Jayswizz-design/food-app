@@ -4,29 +4,29 @@ import { useCart } from "../context/CartContext";
 import { FiMenu, FiX, FiShoppingCart, FiInfo } from "react-icons/fi";
 
 const linkDetails = [
-  {
+ {
     name: "Home",
     path: "/",
     note: "Return to the homepage to see featured dishes and offers",
-    bg: "bg-[url('https://source.unsplash.com/200x50/?home,food')]",
+
   },
   {
     name: "Menu",
     path: "/menu",
     note: "Explore our wide selection of Nigerian dishes",
-    bg: "bg-[url('https://source.unsplash.com/200x50/?nigerian-food')]",
+
   },
   {
     name: "About",
     path: "/about",
     note: "Learn about our story and commitment to quality food",
-    bg: "bg-[url('https://source.unsplash.com/200x50/?restaurant,kitchen')]",
+
   },
   {
     name: "Contact",
     path: "/contact",
     note: "Reach out to us for feedback or inquiries",
-    bg: "bg-[url('https://source.unsplash.com/200x50/?contact,customer-service')]",
+
   },
 ];
 
@@ -59,11 +59,6 @@ const Navbar = () => {
                 <div className="absolute left-0 mt-2 w-64 p-3 text-sm text-gray-200 rounded-lg opacity-0 group-hover:opacity-100 transition bg-black/70 backdrop-blur-sm z-50">
                   <p>{link.note}</p>
                 </div>
-
-                {/* Background image hover */}
-                <div
-                  className={`absolute inset-0 rounded-md opacity-0 group-hover:opacity-30 ${link.bg} bg-cover bg-center transition pointer-events-none`}
-                ></div>
               </div>
             ))}
 
