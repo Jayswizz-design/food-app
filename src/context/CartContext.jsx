@@ -33,7 +33,7 @@ export const CartProvider = ({ children }) => {
 
   // ✅ Remove single item
   const removeFromCart = (id) => {
-    setCartItems((prev) => prev.filter((item) => item.id !== id));
+    setCartItems((prev) => prev.filter((item) => item.id !== idt));
   };
 
   // ✅ DELETE ALL (clear cart once)
