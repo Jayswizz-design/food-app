@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./pages/home";
-import CartPage from "./pages/CartPage";
+import CartPage from "./pages/cartpage";
 import Order from "./pages/Order";
-import CTA from "./components/CTA/CTA";
+import CTA from "./components/cta/cta";
 
 const App = () => {
   return (

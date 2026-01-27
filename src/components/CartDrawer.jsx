@@ -1,4 +1,4 @@
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/cartcontext";
 import { useRef, useState } from "react";
 import PaymentModal from "./PaymentModal";
 import { FiX, FiTrash2, FiMinus, FiPlus } from "react-icons/fi";
@@ -44,7 +44,7 @@ export default function CartDrawer() {
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         className="fixed right-0 top-0 h-screen bg-white z-50 shadow-2xl
-                   w-full sm:w-[420px] flex flex-col transition-transform"
+                   w-full sm:w-[420] flex flex-col transition-transform"
       >
         {/* Header */}
         <div className="p-6 border-b flex justify-between items-center">
