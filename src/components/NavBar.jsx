@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { FiMenu, FiX, FiShoppingCart, FiInfo } from "react-icons/fi";
 
+
 const linkDetails = [
  {
     name: "Home",
@@ -106,7 +107,7 @@ const Navbar = () => {
           {/* Cart */}
           <Link
             to="/cart"
-            className="block px-4 py-3 rounded-md hover:bg-green-500 transition flex items-center"
+            className="px-4 py-3 rounded-md hover:bg-green-500 transition flex items-center"
             onClick={() => setIsOpen(false)}
           >
             <FiShoppingCart className="mr-1 relative z-10" /> ({cartItems.length})
